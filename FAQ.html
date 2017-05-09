@@ -16,6 +16,11 @@ body, h2,h3,h4,h5,h6 {font-family: "Average", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  hr {
+     padding:25px 70px;  
+    width:60vw;
+    color:#000000;
+  }
   a {
    text-decoration:none;
    color:#cc0000
@@ -31,14 +36,9 @@ body, h2,h3,h4,h5,h6 {font-family: "Average", sans-serif}
   #sidebar {
     font-size:16px;
   }
-  
   h1 {
-    font-family:'quattrocento';
+    font-family:'Great Vibes';
     font-size:44px;
-  }
-  
-  .w3-card {
-    margin-left: 15vw ;
   }
 </style>
 <body class="w3-black">
@@ -55,11 +55,11 @@ body, h2,h3,h4,h5,h6 {font-family: "Average", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p id="sidebar">ABOUT</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="ShortStories.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-align-left w3-xxlarge"></i>
     <p id="sidebar">SHORT STORIES</p>
   </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <a href="FAQ.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-question-circle-o w3-xxlarge"></i>
     <p id="sidebar">FAQ</p>
   </a>
@@ -74,16 +74,18 @@ body, h2,h3,h4,h5,h6 {font-family: "Average", sans-serif}
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
-<div class="w3-container w3-center w3-padding-32">
-  
-  <br><br><br>
-  <h2 w3-center>Frequently Asked Questions
-</h2>
-  <br><br> <br><br>
-<div class="w3-row-padding">
-  <div class="w3-two-third"></div>
-  <div class="w3-third">
-  <div class="w3-card-4 w-center" style="width:85%;">
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Frequently Asked Questions</h1>
+  </header>
+
+  <!-- Question 1 -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <br><br>
+     <div class="w3-card-4 w-center" style="width:85%;">
     <header class="w3-container w3-grey w3-text-white">
       <h1>Why isn’t <i>Life Cycle</i> available for purchase anymore?</h1>
     </header>
@@ -98,43 +100,24 @@ body, h2,h3,h4,h5,h6 {font-family: "Average", sans-serif}
 </p>
     </div>
     </div>
- </div>
-</div>
-  <br><br> <br><br>
-   <div class="w3-card-4 w-center" style="width:85%;">
-    <header class="w3-container w3-grey w3-text-white">
-      <h1>What is the next project you have in mind?</h1>
-    </header>
-
-    <div class="w3-container w3-light-grey">
-      <p>I certainly want to continue pursuing the route of the short story.
-        Right now i’m focusing on bettering my craft and learning more about 
-        the industry. I can’t say I have a concrete idea of what I want do next.
-        I guess it depends on how I develop.
-</p>
+          
+           
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey w3-center">Contact Me</h2>
+    <div class="w3-section">
+     <a href="https://twitter.com/CavinBryce"> <p><i class="fa fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>@CavinBryce</p></a>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: CavinBryce@gmail.com</p>
     </div>
-
-    
+      <br>
+   
+  <!-- End Contact Section -->
   </div>
-  
-   <br><br> <br><br>
-  
-   <div class="w3-card-4 w-center" style="width:85%;">
-    <header class="w3-container w3-grey w3-text-white">
-      <h1>Where can I read your available work?</h1>
-    </header>
-
-    <div class="w3-container w3-light-grey">
-      <p>Right here! I keep a catalogue of works-in-progress, published shorts, 
-        and ramblings of ideas here on my site. You can always follow me on twitter to keep updated. 
-        Who knows, maybe a new piece will be published tomorrow! </p>
-    </div>
-
     
-  </div>
-  
+
+
+<!-- END PAGE CONTENT -->
 </div>
-  
-  
-  
-  </html>
+
+</body>
+</html>
